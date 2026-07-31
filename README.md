@@ -1,9 +1,9 @@
 # original_codes
-仓库简介
+# 仓库简介
 本开源仓库整合了多套自研深度学习完整实现代码，覆盖图像分割、实例检测、图像配准、图像分类、消融实验、对比实验、通用数据处理流水线等模块，全部为原创工程代码，标准化整理，适用于论文复现、学术实验、二次开发。
 仓库地址：https://github.com/westbchampion/original_codes
 仓库目录结构
-plaintext
+```plaintext
 original_codes/
 ├── Ghost-carafe-Unet     # 融合Ghost卷积与CARAFE上采样的改进UNet分割网络
 ├── Mask R-CNN            # 完整Mask R-CNN实例分割工程实现
@@ -13,6 +13,7 @@ original_codes/
 ├── photo_classification  # 图像分类基础模型工程
 ├── process_pipeline      # 统一数据预处理+训练推理通用流水线
 └── README.md             # 项目说明文档
+```
 各子模块详细介绍
 1. Ghost-carafe-Unet
 基于 UNet 改进的轻量化分割模型，适配遥感图像、医学影像分割任务：
@@ -44,7 +45,7 @@ original_codes/
 支持图像裁剪、缩放、归一化、标签转换、数据集划分；
 可对接仓库内所有分割、检测、分类子项目，统一数据处理标准。
 环境依赖
-python
+```python
 运行
 # 核心依赖包
 python >= 3.8
@@ -58,16 +59,19 @@ tqdm
 pillow
 tensorboard
 scikit-image
+```
 一键安装依赖：
-bash
+```bash
 运行
 pip install -r requirements.txt
 快速使用教程
 1. 拉取仓库
-bash
+```
+```bash
 运行
 git clone https://github.com/westbchampion/original_codes.git
 cd original_codes
+```
 引用说明
 如果你在学术论文、项目中使用本仓库代码，欢迎点亮 Star，并按如下格式引用：
 plaintext
